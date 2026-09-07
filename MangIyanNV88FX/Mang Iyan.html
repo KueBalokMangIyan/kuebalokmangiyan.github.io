@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mang Iyan NV 88 FX - Live TikTok & VIP Telegram Group</title>
+    <meta name="description" content="Bergabunglah dengan Mang Iyan NV 88 FX untuk Live Trading harian di TikTok dan sinyal VIP presisi tinggi di Telegram.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind Custom Configuration -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        heading: ['Space Grotesk', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            gold: '#fbbf24',
+                            orange: '#f97316',
+                            amber: '#f59e0b',
+                            red: '#ef4444',
+                            dark: '#0c0a09',
+                            darker: '#030201',
+                            card: '#181512',
+                            border: 'rgba(251, 191, 36, 0.15)'
+                        }
+                    },
+                    animation: {
+                        'pulse-glow': 'pulseGlow 2.5s infinite alternate',
+                        'float': 'float 5s ease-in-out infinite',
+                        'shimmer': 'shimmer 2.5s infinite linear',
+                        'radar': 'radar 2s linear infinite',
+                    },
+                    keyframes: {
+                        pulseGlow: {
+                            '0%': { boxShadow: '0 0 15px rgba(249, 115, 22, 0.4), 0 0 30px rgba(239, 68, 68, 0.2)' },
+                            '100%': { boxShadow: '0 0 35px rgba(251, 191, 36, 0.8), 0 0 60px rgba(239, 68, 68, 0.5)' }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-14px)' }
+                        },
+                        shimmer: {
+                            '0%': { backgroundPosition: '-200% 0' },
+                            '100%': { backgroundPosition: '200% 0' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #030201;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+
+        /* Gradient Glow Backgrounds */
+        .glow-amber {
+            background: radial-gradient(circle, rgba(245, 158, 11, 0.18) 0%, rgba(249, 115, 22, 0.05) 50%, rgba(0,0,0,0) 70%);
+        }
+        
+        .glow-red {
+            background: radial-gradient(circle, rgba(239, 68, 68, 0.2) 0%, rgba(0,0,0,0) 70%);
+        }
+
+        /* Text Gradients */
+        .text-gradient-gold {
+            background: linear-gradient(135deg, #fef08a 0%, #fbbf24 40%, #f97316 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .text-gradient-red {
+            background: linear-gradient(135deg, #f87171 0%, #ef4444 50%, #dc2626 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Glassmorphism Cards */
+        .glass-card {
+            background: rgba(24, 21, 18, 0.7);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(251, 191, 36, 0.12);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(249, 115, 22, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(249, 115, 22, 0.25);
+        }
+
+        /* Glowing Buttons */
+        .btn-gold-glow {
+            background: linear-gradient(135deg, #fbbf24 0%, #f97316 100%);
+            box-shadow: 0 0 20px rgba(249, 115, 22, 0.4);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .btn-gold-glow:hover {
+            box-shadow: 0 0 35px rgba(251, 191, 36, 0.7);
+            transform: translateY(-2px) scale(1.02);
+        }
+
+        .btn-red-glow {
+            background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+            box-shadow: 0 0 20px rgba(239, 68, 68, 0.4);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .btn-red-glow:hover {
+            box-shadow: 0 0 35px rgba(239, 68, 68, 0.7);
+            transform: translateY(-2px) scale(1.02);
+        }
+
+        /* Live Indicator Beacon */
+        .live-beacon {
+            position: relative;
+        }
+        .live-beacon::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: #ef4444;
+            border-radius: 50%;
+            animation: beaconPing 1.5s infinite ease-in-out;
+            z-index: -1;
+        }
+        @keyframes beaconPing {
+            0% { transform: scale(1); opacity: 0.8; }
+            100% { transform: scale(2.4); opacity: 0; }
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #030201; }
+        ::-webkit-scrollbar-thumb { background: #29221d; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #f97316; }
+
+        /* Animated Light & Glow Text Effect for the Top Banner */
+        @keyframes animatedGlowText {
+            0% {
+                background-position: 0% 50%;
+                filter: drop-shadow(0 0 8px rgba(251, 191, 36, 0.6)) drop-shadow(0 0 20px rgba(249, 115, 22, 0.4));
+            }
+            50% {
+                background-position: 100% 50%;
+                filter: drop-shadow(0 0 15px rgba(239, 68, 68, 0.8)) drop-shadow(0 0 30px rgba(251, 191, 36, 0.6));
+            }
+            100% {
+                background-position: 0% 50%;
+                filter: drop-shadow(0 0 8px rgba(251, 191, 36, 0.6)) drop-shadow(0 0 20px rgba(249, 115, 22, 0.4));
+            }
+        }
+
+        .text-animated-glow {
+            background: linear-gradient(
+                90deg, 
+                #ffffff 0%, 
+                #fef08a 25%, 
+                #fbbf24 50%, 
+                #f97316 75%, 
+                #ffffff 100%
+            );
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: animatedGlowText 3.5s ease-in-out infinite;
+            display: inline-block;
+        }
+
+        /* FX Khusus Glowing Holographic Neon untuk Teks NV 88 FX */
+        @keyframes nv88GlowPulse {
+            0% {
+                background-position: 0% 50%;
+                filter: drop-shadow(0 0 10px rgba(251, 191, 36, 0.8)) drop-shadow(0 0 25px rgba(249, 115, 22, 0.5));
+                transform: translateY(0px) scale(1);
+            }
+            50% {
+                background-position: 100% 50%;
+                filter: drop-shadow(0 0 20px rgba(239, 68, 68, 0.95)) drop-shadow(0 0 40px rgba(251, 191, 36, 0.9));
+                transform: translateY(-2px) scale(1.03);
+            }
+            100% {
+                background-position: 0% 50%;
+                filter: drop-shadow(0 0 10px rgba(251, 191, 36, 0.8)) drop-shadow(0 0 25px rgba(249, 115, 22, 0.5));
+                transform: translateY(0px) scale(1);
+            }
+        }
+
+        .nv88-text-fx {
+            background: linear-gradient(
+                120deg,
+                #ffffff 0%,
+                #fef08a 20%,
+                #fbbf24 40%,
+                #ef4444 65%,
+                #f97316 85%,
+                #fef08a 100%
+            );
+            background-size: 250% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: nv88GlowPulse 3s ease-in-out infinite;
+            display: inline-block;
+            font-weight: 900;
+            letter-spacing: 0.02em;
+            padding: 0 4px;
+        }
+    </style>
+</head>
+<body class="antialiased font-sans selection:bg-brand-orange selection:text-black">
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container" class="fixed top-32 right-5 z-50 flex flex-col gap-3 pointer-events-none"></div>
+
+    <!-- Navigation Header Block -->
+    <header class="fixed w-full z-50 top-0 left-0">
+        
+        <!-- Top Animated Banner: TRADE. LEARN. GROW. -->
+        <div class="w-full bg-gradient-to-r from-brand-darker via-black to-brand-darker border-b border-brand-gold/30 py-3 text-center overflow-hidden relative shadow-lg shadow-brand-gold/5">
+            <div class="max-w-7xl mx-auto px-4 flex items-center justify-center">
+                <h2 class="font-heading font-black text-xl sm:text-2xl md:text-3xl tracking-[0.2em]">
+                    <span class="text-animated-glow uppercase">TRADE. LEARN. GROW.</span>
+                </h2>
+            </div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="w-full transition-all duration-300 relative" id="navbar">
+            <div class="absolute inset-0 bg-brand-darker/80 backdrop-blur-xl border-b border-brand-gold/10"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="flex items-center justify-between h-20">
+                    <!-- Brand Logo -->
+                    <a href="#home" class="flex items-center gap-3 group">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-orange via-brand-amber to-brand-gold flex items-center justify-center font-black text-black text-xs sm:text-sm shadow-lg shadow-brand-gold/20 group-hover:scale-105 transition-transform">
+                            NV88
+                        </div>
+                        <div>
+                            <span class="font-heading font-extrabold text-base sm:text-xl text-white tracking-wider block">MANG IYAN <span class="nv88-text-fx text-sm sm:text-lg">NV 88 FX</span></span>
+                            <span class="text-[10px] text-brand-gold tracking-widest uppercase font-mono block -mt-1">Trading Live & VIP</span>
+                        </div>
+                    </a>
+
+                    <!-- Desktop Navigation Links -->
+                    <div class="hidden md:flex items-center gap-6 text-sm font-medium text-gray-300">
+                        <a href="#home" class="hover:text-brand-gold transition-colors">Beranda</a>
+                        <a href="#live" class="hover:text-brand-gold transition-colors">Live TikTok</a>
+                        <a href="#calculator" class="hover:text-brand-gold transition-colors">Kalkulator</a>
+                        <a href="#benefit" class="hover:text-brand-gold transition-colors">Benefit VIP</a>
+                        <a href="#signals" class="hover:text-brand-gold transition-colors">Track Record</a>
+                    </div>
+
+                    <!-- Right CTA Buttons (Desktop) -->
+                    <div class="hidden md:flex items-center gap-3">
+                        <a href="https://www.tiktok.com" target="_blank" class="px-4 py-2 rounded-xl bg-red-600/20 hover:bg-red-600/30 text-red-400 border border-red-500/30 text-xs font-bold transition-all flex items-center gap-2">
+                            <i class="fa-brands fa-tiktok"></i> Live TikTok
+                        </a>
+                        <a href="#join" class="btn-gold-glow px-4 py-2 rounded-xl text-brand-darker text-xs font-extrabold flex items-center gap-2">
+                            <i class="fa-brands fa-telegram"></i> Join Telegram VIP
+                        </a>
+                    </div>
+
+                    <!-- Mobile Hamburger Button -->
+                    <button id="mobile-menu-btn" aria-label="Toggle Navigation Menu" class="md:hidden text-gray-300 hover:text-white p-2 rounded-lg bg-white/5 border border-white/10 focus:outline-none">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Drawer Menu -->
+            <div id="mobile-menu" class="hidden absolute w-full bg-brand-card border-b border-brand-gold/20 backdrop-blur-2xl transition-all">
+                <div class="px-5 pt-3 pb-6 space-y-3">
+                    <a href="#home" class="text-white block px-3 py-2 rounded-lg hover:bg-white/5 font-medium">Beranda</a>
+                    <a href="#live" class="text-gray-300 block px-3 py-2 rounded-lg hover:bg-white/5 font-medium">Live TikTok Stream</a>
+                    <a href="#calculator" class="text-gray-300 block px-3 py-2 rounded-lg hover:bg-white/5 font-medium">Kalkulator Sinyal</a>
+                    <a href="#benefit" class="text-gray-300 block px-3 py-2 rounded-lg hover:bg-white/5 font-medium">Benefit VIP</a>
+                    <a href="#signals" class="text-gray-300 block px-3 py-2 rounded-lg hover:bg-white/5 font-medium">Hasil Trade</a>
+                    <div class="pt-4 flex flex-col gap-3">
+                        <a href="https://www.tiktok.com" target="_blank" class="btn-red-glow text-white text-center py-3 rounded-xl font-bold flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-tiktok text-lg"></i> Nonton Live TikTok
+                        </a>
+                        <a href="#join" class="btn-gold-glow text-brand-darker text-center py-3 rounded-xl font-extrabold flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-telegram text-lg"></i> Join Grup Telegram VIP
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header> <!-- PERBAIKAN: Tag header sekarang sudah tertutup dengan benar -->
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-44 lg:pt-52 pb-20 lg:pb-32 overflow-hidden min-h-screen flex items-center">
+        <!-- Glow Light Blobs -->
+        <div class="absolute top-1/4 left-10 w-96 h-96 glow-amber rounded-full pointer-events-none blur-3xl"></div>
+        <div class="absolute bottom-10 right-10 w-[500px] h-[500px] glow-red rounded-full pointer-events-none blur-3xl"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Left Column -->
+                <div class="lg:col-span-7 text-center lg:text-left">
+                    <!-- Live Status Pill -->
+                    <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-red-950/60 border border-red-500/40 mb-8 backdrop-blur-md">
+                        <div class="w-3 h-3 rounded-full bg-red-500 live-beacon"></div>
+                        <span class="text-xs font-bold tracking-wider uppercase text-red-400">
+                            LIVE TRADE TIKTOK : <span class="text-white font-extrabold">SETIAP SESI NY & ASIAN</span>
+                        </span>
+                    </div>
+
+                    <h1 class="font-heading text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 leading-[1.1]">
+                        Trading Bareng <br>
+                        <span class="text-white">Mang Iyan </span>
+                        <span class="nv88-text-fx">NV 88 FX.</span> <br>
+                        Panen <span class="text-gradient-red">Profit Konsisten!</span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-gray-400 mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+                        Dapatkan analisis teknikal langsung saat <strong class="text-white">Live TikTok</strong>, eksekusi sinyal presisi tinggi dengan <em class="text-amber-400 not-italic">Risk:Reward jelas</em>, dan belajar mandiri bersama ribuan member grup VIP.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#join" class="btn-gold-glow text-brand-darker font-extrabold px-8 py-4 rounded-2xl text-base flex items-center justify-center gap-3 group">
+                            <i class="fa-brands fa-telegram text-2xl group-hover:scale-110 transition-transform"></i>
+                            <span>GABUNG TELEGRAM VIP (GRATIS)</span>
+                        </a>
+                        <a href="https://www.tiktok.com" target="_blank" class="btn-red-glow text-white font-bold px-8 py-4 rounded-2xl text-base flex items-center justify-center gap-3 group">
+                            <i class="fa-brands fa-tiktok text-2xl group-hover:scale-110 transition-transform"></i>
+                            <span>NONTON LIVE TIKTOK</span>
+                        </a>
+                    </div>
+
+                    <!-- Community Stat Badges -->
+                    <div class="mt-12 pt-8 border-t border-white/10 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0 text-center lg:text-left">
+                        <div>
+                            <p class="font-heading font-extrabold text-2xl lg:text-3xl text-brand-gold">88%+</p>
+                            <p class="text-xs text-gray-400 mt-1">Winrate Setup</p>
+                        </div>
+                        <div>
+                            <p class="font-heading font-extrabold text-2xl lg:text-3xl text-white">12.5K+</p>
+                            <p class="text-xs text-gray-400 mt-1">Member Telegram</p>
+                        </div>
+                        <div>
+                            <p class="font-heading font-extrabold text-2xl lg:text-3xl text-red-500">1 : 3+</p>
+                            <p class="text-xs text-gray-400 mt-1">R:R Ratio Rata-rata</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Right Column (Interactive Live Chart Card) -->
+                <div class="lg:col-span-5 relative mt-10 lg:mt-0">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-brand-gold via-brand-orange to-brand-red rounded-3xl blur-xl opacity-30 animate-pulse-glow"></div>
+                    
+                    <div class="relative glass-card rounded-2xl p-5 border border-brand-gold/20 shadow-2xl">
+                        <!-- Card Header -->
+                        <div class="flex items-center justify-between mb-4 pb-3 border-b border-white/10">
+                            <div class="flex items-center gap-2">
+                                <span class="w-3 h-3 rounded-full bg-red-500"></span>
+                                <span class="w-3 h-3 rounded-full bg-amber-500"></span>
+                                <span class="w-3 h-3 rounded-full bg-green-500"></span>
+                                <span class="text-xs font-mono text-gray-400 ml-2">XAUUSD • Live Chart</span>
+                            </div>
+                            <span class="px-2.5 py-0.5 rounded-full bg-brand-gold/10 border border-brand-gold/30 text-brand-gold text-[10px] font-bold tracking-widest uppercase">
+                                Mang Iyan Mode
+                            </span>
+                        </div>
+
+                        <!-- TradingView Widget Container -->
+                        <div class="h-[360px] w-full rounded-xl overflow-hidden bg-[#0d0e12] border border-white/5">
+                            <div class="tradingview-widget-container h-full w-full">
+                                <div id="tradingview_hero_chart" class="h-full w-full"></div>
+                                <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                                <script type="text/javascript">
+                                    new TradingView.widget({
+                                        "autosize": true,
+                                        "symbol": "OANDA:XAUUSD",
+                                        "interval": "15",
+                                        "timezone": "Asia/Jakarta",
+                                        "theme": "dark",
+                                        "style": "1",
+                                        "locale": "id",
+                                        "enable_publishing": false,
+                                        "backgroundColor": "#0d0e12",
+                                        "gridColor": "rgba(240, 243, 250, 0.04)",
+                                        "hide_top_toolbar": true,
+                                        "hide_legend": false,
+                                        "save_image": false,
+                                        "container_id": "tradingview_hero_chart"
+                                    });
+                                </script>
+                            </div>
+                        </div>
+
+                        <!-- Floating Live Profit Alert Mock -->
+                        <div class="mt-4 p-3 rounded-xl bg-brand-darker/90 border border-emerald-500/30 flex items-center justify-between animate-float">
+                            <div class="flex items-center gap-3">
+                                <div class="w-9 h-9 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-lg">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-gray-400">Sinyal Terakhir (Gold/XAUUSD)</p>
+                                    <p class="text-sm font-bold text-emerald-400">BUY HIT TP 3 (+420 Pips) 🔥</p>
+                                </div>
+                            </div>
+                            <span class="text-[10px] text-gray-500 font-mono">Baru saja</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Calculator & Live Stream Info Section -->
+    <section id="calculator" class="py-20 relative bg-brand-dark border-y border-brand-gold/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left: Info & Live Schedule -->
+                <div class="lg:col-span-5">
+                    <span class="text-brand-orange font-bold uppercase tracking-widest text-xs">Simulasi Risk & Reward</span>
+                    <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white mt-2 mb-4">
+                        Hitung Potensi Profit Kamu Dalam 1 Setup
+                    </h2>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Di grup VIP Mang Iyan NV 88 FX, setiap sinyal dilengkapi dengan panduan ukuran Lot dan Risk Management yang terukur. Coba geser simulator di samping untuk melihat estimasi hasil.
+                    </p>
+
+                    <!-- Live Schedule Card -->
+                    <div id="live" class="p-5 rounded-2xl glass-card border border-red-500/30 bg-gradient-to-r from-red-950/20 to-transparent">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-3 h-3 rounded-full bg-red-500 live-beacon"></div>
+                            <h3 class="font-bold text-white text-base">Jadwal Live Trade TikTok</h3>
+                        </div>
+                        <ul class="space-y-2 text-xs text-gray-300">
+                            <li class="flex justify-between py-1 border-b border-white/5">
+                                <span class="text-gray-400"><i class="fa-regular fa-clock mr-2 text-brand-gold"></i>Sesi Asia (Crypto/Gold):</span>
+                                <span class="font-bold text-white">10.00 - 12.00 WIB</span>
+                            </li>
+                            <li class="flex justify-between py-1">
+                                <span class="text-gray-400"><i class="fa-regular fa-clock mr-2 text-brand-orange"></i>Sesi New York (Gold/Forex):</span>
+                                <span class="font-bold text-white">19.30 - 22.00 WIB</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right: Interactive Profit Calculator -->
+                <div class="lg:col-span-7">
+                    <div class="glass-card rounded-3xl p-6 sm:p-8 border border-brand-gold/20 shadow-xl relative">
+                        <div class="flex items-center justify-between mb-6">
+                            <h3 class="font-heading font-bold text-xl text-white flex items-center gap-2">
+                                <i class="fa-solid fa-calculator text-brand-gold"></i> Simulator Sinyal VIP
+                            </h3>
+                            <span class="text-xs text-brand-gold bg-brand-gold/10 px-3 py-1 rounded-full font-bold">Risk Reward 1 : 3</span>
+                        </div>
+
+                        <!-- Controls -->
+                        <div class="space-y-6">
+                            <!-- Modal Equity Slider -->
+                            <div>
+                                <div class="flex justify-between text-sm mb-2">
+                                    <span class="text-gray-400">Modal Trading (USD)</span>
+                                    <span id="equity-val" class="font-bold text-brand-gold text-base">$500</span>
+                                </div>
+                                <input id="equity-slider" type="range" min="100" max="10000" step="100" value="500" 
+                                    class="w-full h-2 bg-gray-800 rounded-lg appearance-none cursor-pointer accent-amber-500">
+                            </div>
+
+                            <!-- Lot Size Slider -->
+                            <div>
+                                <div class="flex justify-between text-sm mb-2">
+                                    <span class="text-gray-400">Ukuran Lot (Disarankan 1% Risk)</span>
+                                    <span id="lot-val" class="font-bold text-brand-orange text-base">0.05 Lot</span>
+                                </div>
+                                <input id="lot-slider" type="range" min="0.01" max="2.00" step="0.01" value="0.05" 
+                                    class="w-full h-2 bg-gray-800 rounded-lg appearance-none cursor-pointer accent-orange-500">
+                            </div>
+
+                            <!-- Target Pips Slider -->
+                            <div>
+                                <div class="flex justify-between text-sm mb-2">
+                                    <span class="text-gray-400">Target Gain (Pips)</span>
+                                    <span id="pips-val" class="font-bold text-emerald-400 text-base">300 Pips</span>
+                                </div>
+                                <input id="pips-slider" type="range" min="50" max="1000" step="50" value="300" 
+                                    class="w-full h-2 bg-gray-800 rounded-lg appearance-none cursor-pointer accent-emerald-500">
+                            </div>
+
+                            <!-- Calculation Result Box -->
+                            <div class="p-5 rounded-2xl bg-brand-darker border border-brand-gold/30 grid grid-cols-2 gap-4 text-center">
+                                <div class="border-r border-white/10 pr-2">
+                                    <p class="text-xs text-gray-400 mb-1">Estimasi Profit (1 Trade)</p>
+                                    <p id="profit-calc" class="text-2xl sm:text-3xl font-extrabold text-emerald-400">+$150.00</p>
+                                </div>
+                                <div class="pl-2">
+                                    <p class="text-xs text-gray-400 mb-1">Pertumbuhan Modal</p>
+                                    <p id="growth-calc" class="text-2xl sm:text-3xl font-extrabold text-brand-gold">+30.0%</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 text-center">
+                            <a href="#join" class="inline-flex items-center justify-center gap-2 text-xs font-bold text-brand-gold hover:text-white transition-colors">
+                                Dapatkan Setup Seperti Ini Setiap Hari di Telegram VIP <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefit VIP Section -->
+    <section id="benefit" class="py-24 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="px-4 py-1.5 rounded-full bg-brand-gold/10 border border-brand-gold/30 text-brand-gold text-xs font-extrabold uppercase tracking-widest">
+                    Keuntungan Eksklusif
+                </span>
+                <h2 class="font-heading text-3xl sm:text-5xl font-extrabold text-white mt-4 mb-6">
+                    Kenapa Harus Gabung Komunitas <br class="hidden sm:inline">
+                    <span class="text-white">Mang Iyan </span><span class="nv88-text-fx">NV 88 FX</span>?
+                </h2>
+                <p class="text-gray-400 text-base">
+                    Di sini kamu tidak hanya sekadar "copy trade", tapi diajarkan cara membaca arah pergerakan harga pasar secara mandiri.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Benefit 1 -->
+                <div class="glass-card rounded-3xl p-8 relative group transition-all duration-300">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-amber-500 to-orange-500 flex items-center justify-center text-black font-bold text-2xl mb-6 shadow-lg shadow-orange-500/20 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-bullseye text-white"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-white mb-3">Sinyal High Precision</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Sinyal harian lengkap dengan Entry Zone, Target Take Profit (TP1-TP3), dan Stop Loss ketat demi keamanan modal Anda.
+                    </p>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="glass-card rounded-3xl p-8 relative group transition-all duration-300">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-red-500 to-orange-600 flex items-center justify-center text-white font-bold text-2xl mb-6 shadow-lg shadow-red-500/20 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-video text-white"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-white mb-3">Nobar Live TikTok</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Nonton analisa live interaktif. Bebas bertanya mengenai pair kesayangan kamu dan dapatkan analisis instan.
+                    </p>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="glass-card rounded-3xl p-8 relative group transition-all duration-300">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-yellow-400 to-amber-500 flex items-center justify-center text-black font-bold text-2xl mb-6 shadow-lg shadow-yellow-500/20 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-graduation-cap text-black"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-white mb-3">Edukasi Price Action</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Akses modul dasar hingga mahir: Supply & Demand, Market Structure, Smart Money Concept, dan Money Management.
+                    </p>
+                </div>
+
+                <!-- Benefit 4 -->
+                <div class="glass-card rounded-3xl p-8 relative group transition-all duration-300">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-orange-500 to-red-500 flex items-center justify-center text-white font-bold text-2xl mb-6 shadow-lg shadow-orange-500/20 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-halved text-white"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-white mb-3">Manajemen Risiko Ketat</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Setiap pips dihitung secara rasional. Tidak ada saran untuk All-In atau gaya trading emosional tak terarah.
+                    </p>
+                </div>
+
+                <!-- Benefit 5 -->
+                <div class="glass-card rounded-3xl p-8 relative group transition-all duration-300">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-amber-400 to-yellow-600 flex items-center justify-center text-black font-bold text-2xl mb-6 shadow-lg shadow-amber-500/20 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-users-rectangle text-black"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-white mb-3">Grup Diskusi 24/7</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Komunitas aktif berisi ribuan trader saling berbagi pandangan pasar, tips psikologi, dan kabar berita ekonomi.
+                    </p>
+                </div>
+
+                <!-- Benefit 6 -->
+                <div class="glass-card rounded-3xl p-8 relative group transition-all duration-300 border-brand-gold/40">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-emerald-400 to-teal-500 flex items-center justify-center text-black font-bold text-2xl mb-6 shadow-lg shadow-emerald-500/20 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-gift text-black"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-white mb-3">100% Gratis Akses</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Tanpa biaya pendaftaran bulanan yang memberatkan. Cukup bergabung melalui link resmi Telegram Mang Iyan NV 88 FX.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signal History / Testimonials Showcase -->
+    <section id="signals" class="py-20 bg-brand-dark relative border-t border-brand-gold/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-brand-orange font-bold uppercase tracking-widest text-xs">Track Record</span>
+                    <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white mt-1">
+                        Contoh Rekap Sinyal Mang Iyan
+                    </h2>
+                </div>
+                <p class="text-gray-400 text-sm mt-3 md:mt-0 max-w-md">
+                    Hasil nyata dari transparansi analisis teknikal di grup VIP Telegram.
+                </p>
+            </div>
+
+            <!-- Trade Showcase Grid -->
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="p-6 rounded-2xl glass-card border-emerald-500/30 relative">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <span class="text-xs text-gray-400 font-mono">XAU/USD (Gold)</span>
+                            <h4 class="font-heading font-extrabold text-lg text-white">BUY LIMIT ZONE</h4>
+                        </div>
+                        <span class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-bold border border-emerald-500/40">
+                            +450 PIPS HIT
+                        </span>
+                    </div>
+                    <div class="space-y-2 text-xs font-mono text-gray-300 bg-brand-darker/60 p-3 rounded-xl border border-white/5 mb-4">
+                        <div class="flex justify-between"><span>Entry:</span> <span class="text-white">2645.00 - 2642.00</span></div>
+                        <div class="flex justify-between"><span>SL:</span> <span class="text-red-400">2638.00 (70 pips)</span></div>
+                        <div class="flex justify-between"><span>TP Max:</span> <span class="text-emerald-400">2690.00</span></div>
+                    </div>
+                    <div class="text-[11px] text-gray-400 italic">"Gaskeun profitnya amankan partial TP1 & TP2!"</div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="p-6 rounded-2xl glass-card border-emerald-500/30 relative">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <span class="text-xs text-gray-400 font-mono">BTC/USDT (Crypto)</span>
+                            <h4 class="font-heading font-extrabold text-lg text-white">BREAKOUT SELL</h4>
+                        </div>
+                        <span class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-bold border border-emerald-500/40">
+                            +280% ROI
+                        </span>
+                    </div>
+                    <div class="space-y-2 text-xs font-mono text-gray-300 bg-brand-darker/60 p-3 rounded-xl border border-white/5 mb-4">
+                        <div class="flex justify-between"><span>Entry:</span> <span class="text-white">64,200</span></div>
+                        <div class="flex justify-between"><span>SL:</span> <span class="text-red-400">64,800</span></div>
+                        <div class="flex justify-between"><span>TP Max:</span> <span class="text-emerald-400">61,400</span></div>
+                    </div>
+                    <div class="text-[11px] text-gray-400 italic">"Sesuai setup analisa waktu live TikTok kemarin malam."</div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="p-6 rounded-2xl glass-card border-emerald-500/30 relative">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <span class="text-xs text-gray-400 font-mono">GBP/JPY (Forex)</span>
+                            <h4 class="font-heading font-extrabold text-lg text-white">RETEST BUY</h4>
+                        </div>
+                        <span class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-bold border border-emerald-500/40">
+                            +180 PIPS HIT
+                        </span>
+                    </div>
+                    <div class="space-y-2 text-xs font-mono text-gray-300 bg-brand-darker/60 p-3 rounded-xl border border-white/5 mb-4">
+                        <div class="flex justify-between"><span>Entry:</span> <span class="text-white">192.100</span></div>
+                        <div class="flex justify-between"><span>SL:</span> <span class="text-red-400">191.700</span></div>
+                        <div class="flex justify-between"><span>TP Max:</span> <span class="text-emerald-400">193.900</span></div>
+                    </div>
+                    <div class="text-[11px] text-gray-400 italic">"Setup mantap retest key level resistance turned support."</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Join Section -->
+    <section id="join" class="py-24 relative overflow-hidden">
+        <!-- Glow Orbs -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] glow-amber rounded-full pointer-events-none blur-3xl opacity-60"></div>
+
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="glass-card rounded-[2.5rem] p-8 sm:p-14 border border-brand-gold/30 text-center relative overflow-hidden bg-gradient-to-b from-brand-card to-brand-darker">
+                
+                <!-- Floating Decorative Tag -->
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-gold/10 border border-brand-gold/30 text-brand-gold text-xs font-bold uppercase tracking-widest mb-6">
+                    <i class="fa-solid fa-bolt text-brand-orange animate-bounce"></i> Komunitas VIP Mang Iyan NV 88 FX
+                </div>
+
+                <h2 class="font-heading text-3xl sm:text-5xl font-extrabold text-white mb-6 leading-tight">
+                    Tunggu Apa Lagi? <br>
+                    <span class="text-gradient-gold">Saatnya Cuan Maksimal Bareng!</span>
+                </h2>
+
+                <p class="text-gray-300 text-base sm:text-lg mb-10 max-w-2xl mx-auto">
+                    Bergabung sekarang juga ke grup Telegram resmi Mang Iyan NV 88 FX. Dapatkan setup harian, edukasi gratis, dan teman diskusi trading yang positif.
+                </p>
+
+                <!-- Action Buttons Container -->
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-5 max-w-md mx-auto">
+                    <a href="https://t.me" target="_blank" class="w-full btn-gold-glow text-brand-darker font-extrabold py-4 px-8 rounded-2xl text-base flex items-center justify-center gap-3">
+                        <i class="fa-brands fa-telegram text-2xl"></i>
+                        <span>JOIN TELEGRAM SEKARANG</span>
+                    </a>
+                    
+                    <button onclick="copyTelegramLink()" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white font-bold py-4 px-6 rounded-2xl border border-white/20 text-sm flex items-center justify-center gap-2 transition-all">
+                        <i class="fa-solid fa-copy"></i>
+                        <span>Salin Link</span>
+                    </button>
+                </div>
+
+                <!-- Risk Warning Disclaimer -->
+                <div class="mt-12 pt-8 border-t border-white/10 text-xs text-gray-500 max-w-xl mx-auto leading-relaxed">
+                    <p class="font-semibold text-amber-500/80 mb-1">
+                        <i class="fa-solid fa-triangle-exclamation"></i> PERINGATAN RISIKO & DISCLAIMER:
+                    </p>
+                    <p>
+                        Trading Forex, Gold, dan Crypto mengandung risiko finansial yang tinggi. Mang Iyan NV 88 FX <strong class="text-gray-400">TIDAK PERNAH</strong> menerima titip dana investasi dalam bentuk apapun. Selalu gunakan uang dingin dan kelola risiko secara bijak.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-brand-darker border-t border-white/10 py-12 relative z-10 text-xs text-gray-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                
+                <!-- Logo & Copyright -->
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-brand-orange to-brand-gold flex items-center justify-center font-bold text-black font-heading text-xs">
+                        NV88
+                    </div>
+                    <div>
+                        <p class="font-bold text-white text-sm">Mang Iyan NV 88 FX</p>
+                        <p class="text-[11px] text-gray-500">&copy; <script>document.write(new Date().getFullYear())</script> Mang Iyan NV 88 FX Official. All Rights Reserved.</p>
+                    </div>
+                </div>
+
+                <!-- Social Links -->
+                <div class="flex items-center gap-6 text-lg">
+                    <a href="https://www.tiktok.com" target="_blank" class="hover:text-red-500 transition-colors" title="TikTok Live"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://t.me" target="_blank" class="hover:text-brand-gold transition-colors" title="Telegram VIP"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="#" class="hover:text-brand-orange transition-colors" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-red-600 transition-colors" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // 1. Mobile Menu Toggle Logic
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileBtn && mobileMenu) {
+            const menuIcon = mobileBtn.querySelector('i');
+            mobileBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                if (menuIcon) {
+                    if (mobileMenu.classList.contains('hidden')) {
+                        menuIcon.className = 'fa-solid fa-bars text-xl';
+                    } else {
+                        menuIcon.className = 'fa-solid fa-xmark text-xl';
+                    }
+                }
+            });
+
+            // Close Mobile Menu when clicking menu item
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    if (menuIcon) {
+                        menuIcon.className = 'fa-solid fa-bars text-xl';
+                    }
+                });
+            });
+        }
+
+        // 2. Navbar Scroll Blur Style
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 30) {
+                navbar.classList.add('shadow-2xl');
+            } else {
+                navbar.classList.remove('shadow-2xl');
+            }
+        });
+
+        // 3. Profit Calculator Slider Logic
+        const equitySlider = document.getElementById('equity-slider');
+        const lotSlider = document.getElementById('lot-slider');
+        const pipsSlider = document.getElementById('pips-slider');
+
+        const equityVal = document.getElementById('equity-val');
+        const lotVal = document.getElementById('lot-val');
+        const pipsVal = document.getElementById('pips-val');
+
+        const profitCalc = document.getElementById('profit-calc');
+        const growthCalc = document.getElementById('growth-calc');
+
+        function updateCalculator() {
+            const equity = parseFloat(equitySlider.value);
+            const lot = parseFloat(lotSlider.value);
+            const pips = parseFloat(pipsSlider.value);
+
+            // Estimated profit: $10 per lot per 10 pips (standard gold/forex lot scale approx)
+            const estimatedProfit = lot * pips * 10;
+            const percentageGrowth = (estimatedProfit / equity) * 100;
+
+            equityVal.innerText = `$${equity.toLocaleString('en-US')}`;
+            lotVal.innerText = `${lot.toFixed(2)} Lot`;
+            pipsVal.innerText = `${pips} Pips`;
+
+            profitCalc.innerText = `+$${estimatedProfit.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+            growthCalc.innerText = `+${percentageGrowth.toFixed(1)}%`;
+        }
+
+        equitySlider.addEventListener('input', updateCalculator);
+        lotSlider.addEventListener('input', updateCalculator);
+        pipsSlider.addEventListener('input', updateCalculator);
+
+        // Initial calculation call
+        updateCalculator();
+
+        // 4. Copy Link Toast Notification (No alert())
+        function showToast(message) {
+            const container = document.getElementById('toast-container');
+            const toast = document.createElement('div');
+            toast.className = 'pointer-events-auto flex items-center gap-3 bg-brand-card border border-brand-gold/40 text-white px-5 py-3.5 rounded-2xl shadow-2xl transition-all duration-300 transform translate-y-5 opacity-0';
+            toast.innerHTML = `
+                <div class="w-7 h-7 rounded-full bg-brand-gold/20 flex items-center justify-center text-brand-gold">
+                    <i class="fa-solid fa-check text-sm"></i>
+                </div>
+                <span class="text-xs font-bold">${message}</span>
+            `;
+
+            container.appendChild(toast);
+
+            // Animate In
+            setTimeout(() => {
+                toast.classList.remove('translate-y-5', 'opacity-0');
+            }, 10);
+
+            // Animate Out & Remove
+            setTimeout(() => {
+                toast.classList.add('translate-y-5', 'opacity-0');
+                setTimeout(() => {
+                    toast.remove();
+                }, 300);
+            }, 3000);
+        }
+
+        function copyTelegramLink() {
+            const dummyLink = "https://t.me/MangIyanNV88FXVIP";
+            
+            // Clipboard Copy handling
+            const tempInput = document.createElement('input');
+            tempInput.value = dummyLink;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            showToast('Link Telegram VIP Berhasil Disalin!');
+        }
+    </script>
+</body>
+</html>
